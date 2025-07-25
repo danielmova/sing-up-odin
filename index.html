@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <title>Sing Up Odin</title>
+</head>
+<body>
+    <div class="all">
+        <div class="left">
+            <div class="logoContainer">
+                <img src="images/OdinIdle.gif">
+                <h1>Odin</h1>
+            </div>
+        </div>
+        <div class="right">
+            <div class="textContainer">
+                <h2>This is a page to practice forms and forms confirmations in HTML. This is part of the Odin Project curriculum.</h2>
+                <h2>If you are interested in lerning Web Development, visist <a href="https://www.theodinproject.com/">Odin Project</a></h2>
+            </div>
+            <div class="formContainer">
+                <form>
+                    <label for="fistName">FIRST NAME</label>
+                    <input type="text" name="fistName" id="fistName" placeholder="Jaime..." required>
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Mora..." required>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" placeholder="jaimemora@email.com" required>
+                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <input type="number" name="phoneNumber" id="phoneNumber" placeholder="3144567345" required>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" required>
+                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" required>
+                </form>
+            </div>
+            <div class="btnContainer">
+                <button onclick="submitForm()">Create Account</button>
+                <p>Alredy have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
