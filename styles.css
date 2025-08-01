@@ -1,10 +1,118 @@
 .all {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    font-family: "Pixelify Sans", sans-serif;
+    color: #494949;
+    font-optical-sizing: auto;
+    height: 100vh;
 }
 
 .left {
-    background-color: blue;
+    display: flex;
+    flex: 1 1;
+    max-width: 40%;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url("images/Background.gif");
+    background-size: cover;
+    background-position: center;
 }
 
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: rgba(107, 107, 107, 0.52);
+    width: 100vh;
+    height: 230px;
+    font-size: xx-large;
+    color: white;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    flex: 2 1;
+    background-color: #ececec;
+}
+
+.textContainer {
+    font-size: small;
+    margin: 20px;
+}
+
+.formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+    height: 210px;
+}
+
+.formInputs {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    column-gap: 50px;
+    margin: 20px;
+}
+
+input {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: auto;
+    background: #f8f8f8;
+    border: 3px solid #222;
+    border-radius: 0;
+    padding: 4px 20px;
+    outline: none;
+    box-shadow: none;
+    color: #222;
+    transition: border-color 0.2s;
+    letter-spacing: 1px;
+}
+
+input:focus {
+    border-color: #4caf50;
+    background: #e0ffe0;
+}
+
+input:invalid:focus {
+    border-color: #af4c4c;
+    background: #ffe0e0;
+}
+
+.btnContainer {
+    margin: 20px;
+    margin-top: 40px;
+}
+
+button {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 15px;
+    background: #4caf50;
+    border: 3px solid #327434;
+    border-radius: 0;
+    padding: 8px 40px;
+    outline: none;
+    box-shadow: none;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: #327434;
+    border: 3px solid #4caf50; 
+}
+
+button:active {
+    background: #6e6e6e;
+    border: 3px solid #b9b9b9;
+}
